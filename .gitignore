@@ -1,0 +1,7 @@
+.venv/
+dataset/
+runs/
+__pycache__/
+*.pyc
+yolo26n.pt
+dataset_visualizations/
