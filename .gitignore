@@ -8,3 +8,4 @@ dataset_visualizations/
 classifier_dataset/
 classifier_regions/
 tumor_regions/
+models/*.pth
