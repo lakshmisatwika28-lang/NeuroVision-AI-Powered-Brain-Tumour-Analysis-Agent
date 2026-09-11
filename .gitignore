@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 yolo26n.pt
 dataset_visualizations/
+classifier_dataset/
+classifier_regions/
+tumor_regions/
