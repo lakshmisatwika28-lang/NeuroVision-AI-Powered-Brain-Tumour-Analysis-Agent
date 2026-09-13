@@ -9,3 +9,10 @@ classifier_dataset/
 classifier_regions/
 tumor_regions/
 models/*.pth
+# NeuroVision generated test files
+*_test_img.*
+test_img.*
+men2.png
+neurovision_results/
+tumor_characteristics.csv
+tumor_risk_analysis.csv
