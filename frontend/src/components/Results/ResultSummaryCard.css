@@ -1,0 +1,51 @@
+.result-summary {
+  padding: 22px 24px;
+  background: linear-gradient(160deg, var(--surface), var(--surface-2));
+  position: relative;
+  overflow: hidden;
+}
+
+.result-summary::before {
+  content: '';
+  position: absolute;
+  top: -60%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, var(--accent-glow), transparent 70%);
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.result-summary__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.result-summary__label {
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.result-summary__class {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 4px 0 16px;
+  color: var(--text-1);
+}
+
+.result-summary__disagree {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: var(--danger);
+}
+.result-summary__disagree p { color: var(--text-2); font-size: 13px; margin: 4px 0 0; }
+.result-summary__disagree .result-summary__label { color: var(--text-1); font-size: 15px; font-weight: 600; }

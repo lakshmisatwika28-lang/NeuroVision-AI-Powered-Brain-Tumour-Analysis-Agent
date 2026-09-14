@@ -1,0 +1,19 @@
+.prompt-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  max-width: 700px;
+}
+
+.prompt-chip {
+  padding: 7px 14px;
+  border-radius: var(--r-pill);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+  font-size: 12.5px;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.prompt-chip:hover { border-color: var(--accent-dim); color: var(--text-1); }

@@ -1,0 +1,48 @@
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 18px;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.history-card:hover { border-color: var(--accent-dim); background: var(--surface-2); }
+
+.history-card__title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.history-card__warn { color: var(--danger); }
+
+.history-card__meta {
+  font-size: 12px;
+  color: var(--text-3);
+  margin-top: 4px;
+}
+
+.history-card__side {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.history-card__delete {
+  color: var(--text-3);
+  display: flex;
+  padding: 4px;
+  border-radius: 6px;
+}
+.history-card__delete:hover { color: var(--danger); background: var(--danger-dim); }

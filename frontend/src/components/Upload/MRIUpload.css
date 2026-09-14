@@ -1,0 +1,143 @@
+.mri-upload { width: 100%; max-width: 560px; margin: 0 auto; }
+
+.mri-upload__dropzone {
+  border: 1.5px dashed var(--border-strong);
+  border-radius: var(--r-card);
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  cursor: pointer;
+  background: var(--surface);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.2s ease;
+}
+
+.mri-upload__dropzone:hover {
+  border-color: var(--accent-dim);
+  background: var(--surface-2);
+}
+
+.mri-upload__dropzone--active {
+  border-color: var(--accent);
+  background: rgba(53,199,240,0.06);
+  transform: scale(1.01);
+}
+
+.mri-upload__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  background: rgba(53,199,240,0.08);
+  border: 1px solid rgba(53,199,240,0.2);
+  margin-bottom: 6px;
+}
+
+.mri-upload__dropzone h3 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  margin: 0;
+}
+
+.mri-upload__dropzone p {
+  margin: 0 0 6px;
+  font-size: 13px;
+  color: var(--text-2);
+}
+
+.mri-upload__formats {
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-3);
+  letter-spacing: 0.04em;
+}
+
+.mri-upload__error {
+  color: var(--danger);
+  font-size: 12.5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.mri-upload__preview {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-card);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mri-upload__preview-image {
+  position: relative;
+  border-radius: var(--r-panel);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #000;
+  max-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mri-upload__preview-image img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+  display: block;
+}
+
+.mri-upload__remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
+  border: 1px solid var(--border-strong);
+  color: var(--text-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.mri-upload__remove:hover { background: var(--danger-dim); border-color: var(--danger); }
+
+.mri-upload__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: var(--text-2);
+}
+
+.mri-upload__meta-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.mri-upload__filename {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 260px;
+}
+
+.mri-upload__dims { color: var(--text-3); flex-shrink: 0; }
+
+.mri-upload__analyze {
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 14px;
+}
