@@ -16,3 +16,5 @@ neurovision_results/
 tumor_characteristics.csv
 tumor_risk_analysis.csv
 neurovision_pipeline_backup.py
+backend/uploads/
+backend/reports/
