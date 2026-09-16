@@ -8,7 +8,6 @@ dataset_visualizations/
 classifier_dataset/
 classifier_regions/
 tumor_regions/
-models/*.pth
 # NeuroVision generated test files
 *_test_img.*
 test_img.*
